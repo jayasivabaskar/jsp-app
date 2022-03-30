@@ -1,0 +1,17 @@
+node_modules
+node_cache
+package.json
+db.jsonnpm-debug.*
+config
+www
+esdoc
+coverage
+.nyc_output
+babel*
+dist
+build
+temp
+# Ignore linting for test files
+test/*.js
+test/**/*.test.js
+src/JSON
