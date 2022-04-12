@@ -1,6 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import { render } from "react-dom";
+import Root from "./Root";
+import configureStore from "./ConfigureStore";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const store = configureStore();
+const rootElement = document.getElementById("app");
+
+const renderDom = () => {
+    render(
+        <React.StrictMode>
+            <Root store={store} />
+        </React.StrictMode>, 
+        rootElement
+    );
+};
+
+renderDom();
