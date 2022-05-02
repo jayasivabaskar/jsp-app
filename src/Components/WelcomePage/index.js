@@ -1,11 +1,10 @@
 import React from "react";
+import { BackgroudImage } from "./styled";
 
 function WelcomePage() {
   return (
     <div className="welcomePage">
-      <section>
-        JSB
-      </section>
+      <BackgroudImage />
     </div>
   );
 }
