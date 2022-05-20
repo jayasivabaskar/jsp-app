@@ -2,5 +2,26 @@
     height: 50px;
     .container {
         max-width: 100%;
+        .cartIcon, .searchIcon, .profileImage {
+            cursor: pointer;
+        }
+        .cartIcon, .searchIcon {
+            margin-right: 50px;
+        }
+        .searchBox {
+            width: 100%;
+            margin-left: 50px;
+            input[type=text] {
+                width: 80%!important;
+                padding: 10px 25px 10px 5px;
+                height: 35px;
+                font-size: 15px;
+            }
+            .clearIcon {
+                cursor: pointer;
+                position: relative;
+                right: 25px;
+            }
+        }
     }
 }

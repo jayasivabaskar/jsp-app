@@ -2,6 +2,26 @@
     width: 100vw;
     height: 100vh;
     .welcomePage {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 120px);
+        margin: 10px;
+        .react-grid-item {
+            // background: #ccc;
+            border: 1px solid black;
+            .itemContainer {
+                width: 100%;
+                height: 100%;
+                .itemTopRow {
+                    right: 0px;
+                    position: absolute;
+                    svg {
+                        padding: 5px;
+                    }
+                }
+                .description {
+                    text-align: center;
+                    font-size: 13px;
+                }
+            }
+        }
     }
 }
